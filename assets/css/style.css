@@ -1,0 +1,510 @@
+/* GOOGLE FONT LINK */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Yeseva+One&display=swap');
+/* GOOGLE FONT LINK END */
+
+/* ======================== ===== */
+
+/* COMMON CSS AREA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Lato", sans-serif;
+    font-family: "Yeseva One", serif;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Gentium Book Plus", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Yeseva One", serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    vertical-align: middle;
+}
+
+:root {
+    --HeadCokor: #cc9900;
+    --BrandColor: #dab33e;
+    --Color1: #c9a131;
+    --Color2: #c89f2d;
+    --Color3: #070604;
+    --Color4: #ddce9b;
+    --SpecialColor: #d5b967;
+    --FColor: #191919;
+    --FontLato: "Lato", sans-serif;
+    --FontYesevaOne: "Yeseva One", serif;
+    --FontOpenSans: "Open Sans", sans-serif;
+    --FontGentiumBook: "Gentium Book Plus", serif;
+}
+/* COMMON CSS AREA END */
+
+/* ======================== ===== */
+
+/* PRELOADER AREA */
+.preloader_area {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 80px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#696868 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#696868);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation: l13 2s infinite linear;
+}
+
+@keyframes l13{ 
+    100%{transform: rotate(1turn)}
+}
+/* PRELOADER AREA END */
+
+/* ======================== ===== */
+
+/* BACK TO TOP BTN */
+.back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 9;
+    border: 2px solid #233343;
+    border-radius: 3px;
+    background: var(--SpecialColor);
+    display: none;
+    animation: btt 0.7s ease-in-out;
+}
+
+.back_to_top:hover {
+    border: 2px solid #273c4d;
+    background: var(--Color3);
+}
+
+@keyframes btt {
+    form {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+/* BACK TO TOP BTN END */
+
+/* ======================== ===== */
+
+/* HEADER AREA */
+header {
+    /* padding: 150px 0; */
+    padding-bottom: 88px;
+    background: url(../image/home_img.webp) no-repeat center;
+    background-size: cover;
+}
+/* MENU AREA */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    background: rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+.navbar-brand img {
+    width: 140px;
+}
+
+.nav-link {
+    font-size: 21px;
+    font-weight: bold;
+    font-family: var(--FontGentiumBook);
+    color: #fff;
+    margin: 0 12px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: var(--Color1);
+}
+
+.Color3 {
+    /* background: var(--Color3); */
+    animation: bgDown 0.7s ease-out;
+}
+
+@keyframes bgDown {
+    form {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.nav-link::after {
+    content: " ";
+    position: absolute;
+    background: #fff;
+    height: 5px;
+    width: 0;
+    left: 0;
+    top: -20px;
+    transition: 0.5s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    background: #fff;
+}
+
+.header_icon li a {
+    color: var(--BrandColor);
+    transition: 0.5s;
+}
+
+.header_icon li a:hover {
+    color: #fff;
+}
+/* MENU AREA END */
+
+/* ======================== ===== */
+
+/* HERO AREA */
+.hero_con {
+    padding-top: 60px;
+}
+
+.hero_con h3 {
+    font-size: 75px;
+    font-family: var(--FontYesevaOne);
+}
+
+.hero_btn a {
+    font-size: 18px;
+    font-family: var(--FontLato);
+    border: 2px solid transparent;
+    border-radius: 0;
+    background: rgba(240, 240, 240, 0.3);
+    padding: 10px 40px;
+    margin-left: 25px;
+    transition: 0.5s;
+}
+
+.hero_btn a:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid transparent;
+}
+/* HERO AREA END */
+
+/* ======================== ===== */
+
+/* HEADER AREA END */
+
+/* ======================== ===== */
+
+/* ABOUT AREA */
+.about_area {
+    padding: 25px 0;
+    background: url(../image/about_bg.webp) no-repeat center;
+    background-size: cover;
+}
+
+.about_con {
+    padding: 25px 0;
+}
+
+.about_con h3 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: var(--FontYesevaOne);
+    color: var(--HeadCokor);
+}
+
+.about_con p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--FontLato);
+    color: #4c4c4c;
+}
+/* ABOUT AREA END */
+
+/* ======================== ===== */
+
+/* IGREDIENTS AREA */
+.igredient_area {
+    padding: 68px 0;
+    background: url(../image/vegetable.webp) no-repeat center;
+    background-size: cover;
+}
+
+.igredient_box {
+    padding: 40px 40px 50px;
+    background: rgba(0, 0, 0, 0.6) 3px 8px;
+}
+
+.igredient_con h3 {
+    font-size: 34px;
+    font-weight: 400;
+    font-family: var(--FontYesevaOne);
+}
+
+.igredient_con p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--FontLato);
+    color: #dde0df;
+}
+
+.igre_last_img {
+    margin-top: 22px;
+}
+/* IGREDIENTS AREA END */
+
+/* ======================== ===== */
+
+/* MENU REA */
+.menu_area {
+    padding: 100px 0;
+    background: url(../image/dishes_bg.webp) no-repeat center;
+    background-size: cover;
+}
+
+.menu_con {
+    padding: 0 40px;
+}
+
+.menu_con h3 {
+    font-size: 36px;
+    font-family: var(--FontYesevaOne);
+    color: var(--HeadCokor);
+    text-align: center;
+}
+
+.men_bx {
+    background: transparent;
+    border: 2px solid var(--Color4);
+    right: 2%;
+    padding: 10px;
+}
+
+.mn_sub_box {
+    height: 35px;
+    width: 90px;
+    background: var(--SpecialColor);
+    right: -2px;
+    bottom: 100%;
+}
+.mn_sub_box h5 {
+    font-size: 16px;
+    font-family: var(--FontLato);
+    color: #f8fafa;
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.men_sub_con h5 {
+    font-size: 22px;
+    font-family: var(--FontYesevaOne);
+    color: var(--Color2);
+}
+
+.div {
+    height: 2px;
+    width: 100%;
+    background: var(--Color4);
+    border-radius: 10px;
+}
+
+.menu_con ul p {
+    font-size: 17px;
+    font-family: var(--FontLato);
+    color: #4c4c4c;
+}
+/* MENU REA END */
+
+/* ======================== ===== */
+
+/* REVIEW AREA */
+.review_area {
+    padding: 108px 0;
+    background: url(../image/grill.webp) no-repeat center;
+    background-size: cover;
+}
+
+.review_box {
+    padding: 40px 40px 50px;
+    background: rgba(0, 0, 0, 0.7) 3px 8px;
+}
+
+.review_con h3 {
+    font-size: 32px;
+    font-weight: 400;
+    font-family: var(--FontYesevaOne);
+}
+
+.review_icon {
+    right: 100%;
+    top: 75px;
+    font-size: 22px;
+    color: #818581;
+}
+
+.review_con p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--FontGentiumBook);
+    color: #dde0df;
+}
+
+.review_con h6 {
+    font-size: 14px;
+    font-family: var(--FontLato);
+}
+/* REVIEW AREA END */
+
+/* ======================== ===== */
+
+/* RESERVE AREA */
+.reserve_area {
+    padding: 38px 0;
+    background: url(../image/about_bg.webp) no-repeat center;
+    background-size: cover;
+}
+
+.reserve_con h3 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: var(--FontYesevaOne);
+    color: var(--HeadCokor);
+}
+
+.reserve_con p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--FontLato);
+    color: #4c4c4c;
+}
+
+.rs_fm_cn_mn h6 {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--FontOpenSans);
+    color: var(--Color1);
+}
+
+.rs_fm_cn_mn form .form-control {
+    box-shadow: none;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.rs_fm_cn_mn form .form-control:hover {
+    border: 2px solid var(--Color1);
+}
+
+.form-control {
+    border: 2px solid transparent;
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.form-control:hover {
+    border: 2px solid var(--Color1);
+    border-radius: 0;
+}
+
+.reserve_btn a {
+    width: 50%;
+    border: 2px solid transparent;
+    border-radius: 0;
+    background: var(--Color1);
+    font-family: var(--FontOpenSans);
+    margin-left: 115px;
+    transition: 0.5s;
+}
+
+.reserve_btn a:hover {
+    border: 2px solid transparent;
+    background: #233343;
+}
+/* RESERVE AREA END */
+
+/* ======================== ===== */
+
+/* FOOTER AREA */
+.footer_area {
+    background: var(--FColor);
+}
+
+.footer_con h3 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: var(--FontYesevaOne);
+    color: #fefefe;
+    margin: 48px 0 18px;
+}
+
+.footer_con p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--FontOpenSans);
+}
+
+.footer_con p span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    font-family: var(--FontOpenSans);
+}
+
+.footer_icon ul li a {
+    font-size: 30px;
+    color: #fff;
+}
+
+.main_footer .div {
+    height: 3px;
+    width: 100%;
+    background: #373737;
+    margin-top: 40px;
+  }
+
+  .main_footer_con p {
+    font-family: var(--FontLato);
+    font-size: 18px;
+    font-weight: 400;
+    color: #cacaca;
+    padding: 40px 0 50px;
+  }
+/* FOOTER AREA END */
+
+/* ======================== ===== */

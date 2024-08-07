@@ -1,0 +1,96 @@
+@media (min-width: 1400px) {
+    .igredient_con p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .igredient_con p {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-link {
+        margin: 0 10px;
+    }
+
+    .hero_con h3 {
+        font-size: 70px;
+    }
+
+    .igredient_con p {
+        font-size: 20px;
+    }
+
+    .igre_last_img {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero_con h3 {
+        font-size: 54px;
+    }
+    .about_image {
+        margin-top: 50%;
+    }
+
+    .igredient_con p {
+        font-size: 20px;
+    }
+
+    .igre_last_img {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero_con h3 {
+        font-size: 40px;
+    }
+    .hero_btn a {
+        margin: 10px 0;
+    }
+
+    .igredient_con p {
+        font-size: 20px;
+    }
+
+    .igre_last_img {
+        justify-content: center;
+    }
+
+    .reserve_img {
+        width: 250px;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero_con h3 {
+        font-size: 36px;
+    }
+    .hero_btn a {
+        margin: 10px 0;
+    }
+
+    .igredient_con p {
+        font-size: 17px;
+    }
+
+    .igre_last_img {
+        justify-content: center;
+    }
+
+    .igre_last_img img {
+        width: 90px;
+    }
+
+    .review_icon {
+        top: 120px;
+    }
+
+    .reserve_img {
+        width: 135px;
+    }
+}
